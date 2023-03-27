@@ -1,0 +1,23 @@
+<div class="login-container">
+  <div class="form-login">
+    <h2 class="fw-bold mb-2">Acceso al portfolio</h2>
+    <p class="mb-5">Ingresa tu usuario y contraseña</p>
+
+    <form #f="ngForm" class="form-login__input" (ngSubmit)="onLogin()" novalidate>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <mat-form-field appearance="fill">
+          <mat-label>Usuario</mat-label>
+          <input matInput type="text" id="usserName" name="usserName" [(ngModel)]="usserName" required>
+        </mat-form-field>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" id="password" name="password" [(ngModel)]="password" required>
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="accent" type="submit">Login</button>
+      <a mat-button href="/">Volver</a>
+    </form>
+  </div>
+</div>

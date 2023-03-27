@@ -1,0 +1,20 @@
+<section class="contenedor">
+    <div class="contenedor__barra-titulo">
+        <h2>Educación</h2>
+        <i class="fa-solid fa-plus" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
+    </div>
+    <div class="contenedor__child" *ngFor="let educacion of educaciones">
+        <img [src]="educacion.imgEducacion" [alt]="educacion.nombreEducacion">
+        <div class="descripcion-puesto">
+            <h3>{{educacion.nombreEducacion}}</h3>
+            <h4 class="descripcion-puesto__info">{{educacion.establecimiento}}</h4>
+            <h5 class="descripcion-puesto__info">{{educacion.startEducacion}} - {{educacion.endEducacion}}</h5>
+            <p>{{educacion.descripcionEducacion}}</p>
+        </div>
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-pen" *ngIf="isLogged" (click)="openDialogEdit(educacion.id)"></i>
+            <i class="fa-solid fa-trash" *ngIf="isLogged" (click)="delete(educacion.id)"></i>
+        </div>
+    </div>
+
+</section>

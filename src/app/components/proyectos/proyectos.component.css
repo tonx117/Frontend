@@ -1,0 +1,13 @@
+@import url(../experiencia/experiencia.component.css);
+
+.descripcion-puesto__url a{
+    font-weight: bold;
+}
+
+.descripcion-puesto p{
+    margin: 0;
+}
+
+.descripcion-puesto > div{
+    margin-top: 1em;
+}

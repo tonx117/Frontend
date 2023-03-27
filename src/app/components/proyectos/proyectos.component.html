@@ -1,0 +1,24 @@
+<section class="contenedor">
+    <div class="contenedor__barra-titulo">
+        <h2>Proyectos</h2>
+        <i class="fa-solid fa-plus" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
+    </div>
+    <div class="contenedor__child" *ngFor="let proyecto of proyectos">
+        <img [src]="proyecto.imgProyecto" [alt]="proyecto.nombreProyecto">
+        <div class="descripcion-puesto">
+            <h3>{{proyecto.nombreProyecto}}</h3>
+            <div>
+                <p class="descripcion-puesto__url">
+                    <a [href]="proyecto.urlRepo" target="_blank">Repositorio</a>
+                    -
+                    <a [href]="proyecto.urlDeploy" target="_blank">Deploy</a>
+                </p>
+                <p>{{proyecto.descripcionProyecto}}</p>
+            </div>
+        </div>
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-pen" *ngIf="isLogged" (click)="openDialogEdit(proyecto.id)"></i>
+            <i class="fa-solid fa-trash" *ngIf="isLogged" (click)="delete(proyecto.id)"></i>
+        </div>
+    </div>
+</section>

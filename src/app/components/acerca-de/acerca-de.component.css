@@ -1,0 +1,66 @@
+.foto-perfil {
+    position: absolute;
+    top: 330px;
+    width: 200px;
+    height: 200px;
+    left: 220px;
+}
+.bi {
+    fill: white;
+}
+/* .descripcion {
+    position: relative;
+}
+
+.foto-perfil {
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -220px;
+    left: 20px;
+}
+
+.descripcion__info {
+    margin: 120px 20px 20px 20px;
+}
+
+.about-me {
+    margin: 50px 20px;
+    display: flex;
+}
+
+.about-me__child{
+    width: 100%;
+}
+
+h3{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+h3.location {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p{
+    margin: 0;
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+}
+
+@media (max-width: 750px) {
+
+    .about-me__child p{
+      text-align: justify;
+    }
+
+}
+
+@media (max-width: 450px){
+    
+    .foto-perfil{
+      width: 100px;
+      top: -150px;
+    }
+} */
