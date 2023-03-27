@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  ENDPOINT = 'http://localhost:8080/educacion/'
+  ENDPOINT = 'https://portfolio-backend-0chd.onrender.com/educacion/'
 
   constructor(private httpClient: HttpClient) { }
 

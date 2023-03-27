@@ -9,7 +9,7 @@ import { Skill } from '../model/skills';
 })
 export class SkillsService {
 
-  ENDPOINT = 'http://localhost:8080/skills/';
+  ENDPOINT = 'https://portfolio-backend-0chd.onrender.com/skills/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { Proyecto } from '../model/proyectos';
 })
 export class ProyectosService {
 
-  ENDPOINT = 'http://localhost:8080/proyectos/';
+  ENDPOINT = 'https://portfolio-backend-0chd.onrender.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
 

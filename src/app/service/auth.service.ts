@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  ENDPOINT = 'http://localhost:8080/auth/';
+  ENDPOINT = 'https://portfolio-backend-0chd.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

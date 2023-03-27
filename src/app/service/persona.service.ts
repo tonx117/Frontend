@@ -9,7 +9,7 @@ import { Persona } from '../model/persona.model';
 })
 export class PersonaService {
   
-  ENDPOINT = 'http://localhost:8080/persona/';
+  ENDPOINT = 'https://portfolio-backend-0chd.onrender.com/persona/';
 
   constructor(private http: HttpClient) { }
 

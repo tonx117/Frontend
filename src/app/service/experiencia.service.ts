@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaService {
 
-  ENDPOINT = 'http://localhost:8080/experiencia-laboral/';
+  ENDPOINT = 'https://portfolio-backend-0chd.onrender.com/experiencia-laboral/';
   
   constructor(private httpClient: HttpClient) { }
 
